@@ -1,0 +1,42 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>QamaApplication</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>QamaApplication</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+  <ProjectCollection>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Commands" CopyParameters="true">
+                    Qama.Commands\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Events" CopyParameters="true">
+                    Qama.Events\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.Persistence" CopyParameters="true">
+                    Qama.Persistence\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.Presentation" CopyParameters="true">
+                    Qama.Presentation\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.Queries" CopyParameters="true">
+                    Qama.Queries\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.TestEventHandlerWorker" CopyParameters="true">
+                    Qama.TestEventHandlerWorker\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.Validators" CopyParameters="true">
+                    Qama.Validators\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+   </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
