@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using $safeprojectname$.EventHandlers;
 using $safeprojectname$.Events;
 using Qama.Framework.Core.Abstractions.Events;
 using Qama.Framework.Core.Abstractions.Settings;

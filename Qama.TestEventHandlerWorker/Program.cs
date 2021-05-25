@@ -25,7 +25,7 @@ namespace $safeprojectname$
             services.AddServiceLocator<MicrosoftServiceLocator>();
             services.AddLogging();
 
-            services.AddRabbitMQEventHandler<TestEvent, Events.EventHandlers.TestEventHandler>();
+            services.AddRabbitMQEventHandler<TestEvent, TestEventHandler>();
 
             string environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 

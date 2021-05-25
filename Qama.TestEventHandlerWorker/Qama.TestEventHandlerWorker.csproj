@@ -39,6 +39,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\$ext_safeprojectname$.Events\$ext_safeprojectname$.Events.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Persistence\$ext_safeprojectname$.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
